@@ -1,0 +1,102 @@
+/* page style */
+
+#format {
+    margin-left: 30px;
+}
+
+.jumbotron {
+    color: white;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 95px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-image: url(assets/images/paint_splat.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.char {
+    display: inline-block;
+    margin: auto;
+    height: 150px;
+}
+
+.paint {
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 800px;
+}
+
+.instruct {
+    text-align: center;
+    color: rgb(49, 49, 179);
+    margin: 20px;
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(223, 107, 12);
+}
+
+h5 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#guess {
+    background-color: rgb(160, 17, 29);
+    color: whitesmoke;
+    width: 30%;
+    padding: 60px;
+    text-align: center;
+    text-decoration: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#play {
+    background-color: rgb(250, 236, 43);
+    color: black;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 60px;
+    text-align: center;
+    text-decoration: bold;
+}
+
+.winsloss {
+    background-color: rgb(146, 96, 146);
+    color: whitesmoke;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 60px;
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}

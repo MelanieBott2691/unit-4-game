@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Unit 4 Game CrystalsCollector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset/css">
+
+    <body>
+        <div class="jumbotron text-center" style="background-color: rgb(35, 48, 170)" font size="98px">
+            <h1>ColorCollector</h1>
+        </div>
+        <section class="instruct">
+            <img class="paint" src="assets/images/paint_splat.jpg" style="width:700px;height:700px;">
+            <article>
+                <h5>
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four colors below. By clicking on a color you will add a specific amount of points to your total score.</p>
+                    <p>You win the game by matching your total score to the random number.</p>
+                    <p>You lose the game if your total score goes above the random number.</p>
+                    <p>The value of each color is hidden from you until you click on it.</p>
+                    <p>The game will change the values of the colors each time the game starts.</p>
+                </h5>
+
+            </article>
+        </section>
+        <div id="container">
+            <img id="redCrayon" class="char" src="assets/images/red_crayon.png" alt="red crayon">
+            <img id="blueCrayon" class="char" src="assets/images/blue_crayon.png" alt="blue crayon">
+            <img id="yellowCrayon" class="char" src="assets/images/yellow_crayon.png" alt="yellow crayon">
+            <img id="purpleCrayon" class="char" src="assets/images/purple_crayon.png" alt="purple crayon">
+        </div>
+
+        <div class="scoreboard">
+
+            <h2 id="guess">
+                Guess the Number
+                <span id="target"></span>
+            </h2>
+
+            <h2 id="play">
+                Player Score:
+                <span id="playerScore"></span>
+            </h2>
+
+            <div class="winsloss">
+                <h2>
+                    <strong>Wins:</strong>
+                    <span id="win"></span>
+                    <br>
+                    <br>
+                    <strong>Losses:</strong>
+                    <span id="losses"></span>
+                </h2>
+            </div>
+        </div>
+
+        <!-- heading CrystalsCollector changed to Color Collector to be different -->
+
+        <!-- number  -->
+        <!-- win/lose -->
+
+
+
+        <!-- <div class="container-colors">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3><a href="#">Red</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3><a href="#">Blue</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3><a href="#">Yellow</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3><a href="#">Purple</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                </div>
+            </div> -->
+
+        <!-- 
+            <div class="container-totalScore">
+                <p>Your Total Score:</p>
+            </div>
+            <div class="container-playerScore">
+            </div> -->
+
+        <!-- container holding score with container holding score next to it -->
+
+        <!-- container holding crystals  -->
+
+        <!-- container with total score/wins and loses  -->
+
+
+        <!-- craystal values randomly generated numbers between 1 and 12 -->
+
+        <!-- random numbers trying to guess is between 19 and 120 -->
+
+
+        <!-- create a randomly generated number -->
+
+        <!-- onclick commands -->
+        <!-- four crystals displayed as buttons -->
+        <!-- when the crystal is clicked it will add a specific amount of points to the score -->
+        <!-- the game will hide the amount until the player clicks a crystal -->
+        <!-- when clicked update players score counter -->
+
+        <!-- player wins if total score matches the random number -->
+
+        <!-- game restarts whenever the player wins or loses -->
+
+        <!-- when the game begins again, the player should see a new random number -->
+        <!-- all crystals will have four new hidden values -->
+        <!-- scoure counter will reset to zero -->
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
+
+    </body>
+
+</html>
